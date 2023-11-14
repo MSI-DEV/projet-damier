@@ -1,18 +1,47 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="../assets/damier.js" defer></script>
-        <link rel="stylesheet" href="../assets/style.css">
-        <title>Projet-Damier</title>
-        <h1>Damier</h1>
-    </head>
-    <div class="mes cases">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css">
+    <script src="../assets/damier.js" defer></script>
+    <title>Projet-Echiquier</title>
+</head>
+<body>
+    <h1>Echiquier</h1>
+    <button id="startButton">Démarrer une partie</button>
+    <span id="timer">Temps restant : <span id="time">10:00</span></span>
 
-        
+    <div class="grid-container">
+        <div class="pawns hidden">
+            <!-- Pions blancs -->
+            <div class="pawn white pawn-rook"><img src="../assets/img/tour-blanc.png" alt="Rook"></div>
+            <div class="pawn white pawn-knight"><img src="../assets/img/cavalier-blanc.png" alt="Knight"></div>
+            <div class="pawn white pawn-bishop"><img src="../assets/img/fou-blanc.png" alt="Bishop"></div>
+            <div class="pawn white pawn-queen"><img src="../assets/img/reine-blanc.png" alt="Queen"></div>
+            <div class="pawn white pawn-king"><img src="../assets/img/roi-blanc.png" alt="King"></div>
+            <div class="pawn white pawn-bishop"><img src="../assets/img/fou-blanc.png" alt="Bishop"></div>
+            <div class="pawn white pawn-knight"><img src="../assets/img/cavalier-blanc.png" alt="Knight"></div>
+            <div class="pawn white pawn-rook"><img src="../assets/img/tour-blanc.png" alt="Rook"></div>
+            <div class="pawn white pawn-pawn"><img src="../assets/img/pion-blanc.png" alt="Pawn"></div>
+            <!-- Répétez ceci pour d'autres pions blancs -->
+
+            <!-- Pions noirs -->
+            <div class="pawn black pawn-rook"><img src="../assets/img/tour-noir.png" alt="Rook"></div>
+            <div class="pawn black pawn-knight"><img src="../assets/img/cavalier-noir.png" alt="Knight"></div>
+            <div class="pawn black pawn-bishop"><img src="../assets/img/fou-noir.png" alt="Bishop"></div>
+            <div class="pawn black pawn-queen"><img src="../assets/img/reine-noir.png" alt="Queen"></div>
+            <div class="pawn black pawn-king"><img src="../assets/img/roi-noir.png" alt="King"></div>
+            <div class="pawn black pawn-bishop"><img src="../assets/img/fou-noir.png" alt="Bishop"></div>
+            <div class="pawn black pawn-knight"><img src="../assets/img/cavalier-noir.png" alt="Knight"></div>
+            <div class="pawn black pawn-rook"><img src="../assets/img/tour-noir.png" alt="Rook"></div>
+            <div class="pawn black pawn-pawn"><img src="../assets/img/pion-noir.png" alt="Pawn"></div>
+            <!-- Répétez ceci pour d'autres pions noirs -->
+        </div>
     </div>
-    <body>
-        
-    </body>
-    </html>
+
+    <div class="score">
+        <span class="white-score">0</span> - <span class="black-score">0</span>
+    </div>
+</body>
+</html>

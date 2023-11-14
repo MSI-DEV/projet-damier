@@ -1,27 +1,131 @@
-*{
+* {
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
 }
 
-table{
-    /* border: solid 1 px black; */
+table {
     border-collapse: collapse;
+    width: 50px;
+    margin: auto;
+    margin-bottom: 10rem;
+    
 }
-
-h1{
+.empty-cell {
+    width: 40px; /* Ajustez la largeur en fonction de vos besoins */
+    height: 60px; /* Ajustez la hauteur en fonction de vos besoins */
+    border: solid 2px;
+}
+h1 {
+    font-size: 3rem;
     text-align: center;
 }
 
 td {
-    /* border: solid 1px black; */
+    border: solid 1px black;
     text-align: center;
-    padding: 2rem;
-    
+    /* padding: 2rem; */
 }
 
-tr{
-    /* border: solid 1px black; */
+tr {
     text-align: center;
-    
 }
+
+.pawn img {
+    width: 70px;
+    height: 70px;
+}
+
+.grid-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.white {
+    background-color: transparent;
+    border: solid .8px;
+}
+
+.black {
+    background-color: transparent;
+    border: solid .8px;
+}
+
+/* Pions blancs */
+.pawn.white.pawn-rook img {
+    width: 1rem;
+    height: 10%;
+}
+
+.pawn.white.pawn-knight img {
+    width: 100%;
+    height: 100%;
+}
+
+.pawn.white.pawn-bishop img {
+    width: 50%;
+    height: 50%;
+}
+
+.pawn.white.pawn-queen img {
+    width: 50%;
+    height: 50%;
+}
+
+.pawn.white.pawn-king img {
+    width: 50%;
+    height: 50%;
+}
+
+.pawn.white.pawn-pawn img {
+    width: 50%;
+    height: 50%;
+}
+
+/* Pions noirs */
+.pawn.black.pawn-rook img {
+    width: 50%;
+    height: 50%;
+    /* border: 2px solid red; Ajoutez cette ligne temporairement */
+}
+
+.pawn.black.pawn-knight img {
+    width: 100%;
+    height: 100%;
+}
+
+.pawn.black.pawn-bishop img {
+    width: 50%;
+    height: 50%;
+}
+
+.pawn.black.pawn-queen img {
+    width: 50%;
+    height: 50%;
+}
+
+.pawn.black.pawn-king img {
+    width: 50%;
+    height: 50%;
+}
+
+.pawn.black.pawn-pawn img {
+    width: 100%;
+    height: 100%;
+}
+
+.score {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.white-score,
+.black-score {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0 0.5em;
+}
+.hidden {
+    display: none;
+  }
