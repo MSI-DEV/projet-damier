@@ -16,7 +16,7 @@ for (let lignes = 1; lignes <= 10; lignes++) {
 
         // Définition de la couleur de fond de la cellule en fonction de la parité de la somme des lignes et cellules
         if ((lignes + cellules) % 2 === 0) {
-            maCellule.style.backgroundColor = "white";   
+            maCellule.style.backgroundColor = "";   
         } else {
             maCellule.style.backgroundColor = "grey";
         }

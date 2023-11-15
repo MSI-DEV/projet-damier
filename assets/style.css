@@ -6,15 +6,18 @@
 
 table {
     border-collapse: collapse;
-    width: 50px;
+    width: 50%;
+    height: 50%;
     margin: auto;
     margin-bottom: 10rem;
+    border: solid 2px black;
+    
     
 }
 .empty-cell {
-    width: 40px; /* Ajustez la largeur en fonction de vos besoins */
-    height: 60px; /* Ajustez la hauteur en fonction de vos besoins */
-    border: solid 2px;
+    width: 140px; /* Ajustez la largeur en fonction de vos besoins */
+    height: 140px; /* Ajustez la hauteur en fonction de vos besoins */
+    /* border: solid black 4px; */
 }
 h1 {
     font-size: 3rem;
@@ -22,9 +25,11 @@ h1 {
 }
 
 td {
-    border: solid 1px black;
+    /* border: solid 1px black; */
     text-align: center;
     /* padding: 2rem; */
+    /* border: solid 1px black; */
+    /* border-bottom: none; */
 }
 
 tr {
@@ -32,8 +37,8 @@ tr {
 }
 
 .pawn img {
-    width: 70px;
-    height: 70px;
+    width: 140px;
+    height: 140px;
 }
 
 .grid-container {
@@ -42,15 +47,15 @@ tr {
     grid-template-columns: repeat(8, 1fr);
 }
 
-.white {
-    background-color: transparent;
-    border: solid .8px;
-}
+/* .white { */
+    /* background-color: transparent; */
+    /* border: solid black 1px; */
+/* } */
 
-.black {
-    background-color: transparent;
-    border: solid .8px;
-}
+/* .black { */
+    /* background-color: transparent; */
+    /* border: solid black 1px; */
+/* } */
 
 /* Pions blancs */
 .pawn.white.pawn-rook img {
@@ -64,29 +69,29 @@ tr {
 }
 
 .pawn.white.pawn-bishop img {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
 }
 
 .pawn.white.pawn-queen img {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
 }
 
 .pawn.white.pawn-king img {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
 }
 
 .pawn.white.pawn-pawn img {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
 }
 
 /* Pions noirs */
 .pawn.black.pawn-rook img {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     /* border: 2px solid red; Ajoutez cette ligne temporairement */
 }
 
@@ -96,18 +101,18 @@ tr {
 }
 
 .pawn.black.pawn-bishop img {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
 }
 
 .pawn.black.pawn-queen img {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
 }
 
 .pawn.black.pawn-king img {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
 }
 
 .pawn.black.pawn-pawn img {
@@ -129,3 +134,8 @@ tr {
 .hidden {
     display: none;
   }
+  @media screen and (max-width: 100px) {
+    td {
+        height: 30px;
+    }
+}
